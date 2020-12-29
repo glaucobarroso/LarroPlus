@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Larrô+</string>
+    <string name="facebook_app_id">1303222810021443</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+    <string name="next_level_points">You need more %1$d points to reach %2$s level</string>
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="username_hint">CPF or E-mail</string>
+    <string name="password_hint">Password</string>
+    <string name="login_btn">Login</string>
+    <string name="points_header">Level %1$s</string>
+    <string name="points_placeholder">0</string>
+    <string name="points_footer">points</string>
+</resources>

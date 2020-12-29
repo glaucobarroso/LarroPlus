@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/points_header"
+        android:textSize="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/points_placeholder"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="80dp"
+        android:layout_below="@id/header"
+        android:layout_centerHorizontal="true"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/points_footer"
+        android:layout_below="@id/body"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        />
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/next_level_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/next_level_points"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/footer"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:scaleY="8"
+        android:layout_gravity="center"
+        android:progress="70"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@id/next_level_text"
+        style="@style/Widget.Shrine.ProgressBar" />
+
+</RelativeLayout>
