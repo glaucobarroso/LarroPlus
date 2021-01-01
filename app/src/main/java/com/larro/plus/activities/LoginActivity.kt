@@ -1,4 +1,4 @@
-package com.larro.plus
+package com.larro.plus.activities
 
 import android.content.Intent
 import android.os.Bundle
@@ -9,15 +9,13 @@ import com.facebook.FacebookCallback
 import com.facebook.FacebookException
 import com.facebook.login.LoginResult
 import com.facebook.login.widget.LoginButton
-import com.larro.plus.callbacks.ProfileCallback
-import com.larro.plus.net.facebook.ProfileRequest
+import com.larro.plus.R
+
+const val LOGIN_SUCESS: Int = 0
 
 class LoginActivity : AppCompatActivity() {
 
     private val fbCallbackManager : CallbackManager = CallbackManager.Factory.create()
-    companion object {
-        val LOGIN_SUCESS: Int = 0
-    }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -36,6 +34,7 @@ class LoginActivity : AppCompatActivity() {
                         applicationContext, "FacebookCallback<LoginResult> onSuccess",
                         Toast.LENGTH_SHORT
                     ).show()
+                    setResult(LOGIN_SUCESS, null);
                     finish()
                 }
 

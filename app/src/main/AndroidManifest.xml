@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Shrine">
             <intent-filter>
@@ -19,7 +19,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Shrine">
+        </activity>
+        <activity
+            android:name=".activities.QrCodeActivity"
             android:label="@string/app_name"
             android:theme="@style/Theme.Shrine">
         </activity>
